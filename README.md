@@ -1,4 +1,4 @@
-# 🧠 Personality Mapper
+# 🧠 Personality MappeR
 
 ## 📌 Project Overview
 
