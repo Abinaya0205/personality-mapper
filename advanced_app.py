@@ -283,8 +283,7 @@ elif feature == "🌐 Multilingual":
                 with st.spinner("Translating..."):
                     # Translate to English
                     if input_lang != 'English':
-                        translation = translator.translate(text, src=lang_map[input_lang], dest='en')
-                        english_text = translation.text
+                        english_text = GoogleTranslator(source=lang_map[input_lang],target='en').translate(text)
                         st.success(f"📝 Translated to English: {english_text}")
                     else:
                         english_text = text
@@ -293,9 +292,9 @@ elif feature == "🌐 Multilingual":
                     # Translate to output language
                     if output_lang != 'English':
                         dest_lang = lang_map[output_lang]
-                        display_translation = translator.translate(english_text, dest=dest_lang)
+                        display_translation = GoogleTranslator(source='en',target=dest_lang).translate(english_text)
                         st.markdown(f"### 📝 {output_lang} Translation:")
-                        st.write(display_translation.text)
+                        st.write(display_translation)
                     else:
                         st.markdown("### 📝 English Text:")
                         st.write(english_text)
