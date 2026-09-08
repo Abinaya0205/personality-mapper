@@ -237,17 +237,17 @@ elif feature == "🎤 Voice Input":
                 text = recognizer.recognize_google(audio)
 
             st.success(f"✅ Transcribed: {text}")
-            st.session_state['voice_text'] = text
+            st.session_state["voice_text"] = text
 
-       except sr.UnknownValueError:
-           st.error("Could not understand audio. Please try again.")
+        except sr.UnknownValueError:
+            st.error("Could not understand audio. Please try again.")
 
-       except sr.RequestError:
-           st.error("Network error. Check your internet connection.")
- 
-       except Exception as e:
-           st.error(f"Error: {e}")
-    
+        except sr.RequestError:
+            st.error("Network error. Check your internet connection.")
+
+        except Exception as e:
+            st.error(f"Error: {e}")
+            
     if 'voice_text' in st.session_state:
         text = st.session_state['voice_text']
         st.text_area("📝 Transcribed Text:", text, height=100)
