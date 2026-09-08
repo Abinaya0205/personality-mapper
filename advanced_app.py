@@ -141,7 +141,7 @@ def display_results(scores, type_code, sentiment, word_count):
 # ========== TRANSLATION ==========
 def translate_text(text, dest_lang):
     try:
-        translator = GoogleTranslate(source='auto', target=dest_lang)
+        translator = GoogleTranslator(source='auto', target=dest_lang)
         translation = translator.translate(text)
         return translation
     except Exception as e:
