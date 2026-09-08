@@ -144,7 +144,7 @@ def translate_text(text, dest_lang):
         translator = GoogleTranslate(source='auto', target=dest_lang)
         translation = translator.translate(text)
         return translation
-    except:
+    except Exception as e:
         return None
 
 # ========== FEATURE 1: TEXT ANALYSIS ==========
