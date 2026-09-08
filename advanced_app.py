@@ -226,27 +226,27 @@ elif feature == "🎤 Voice Input":
     st.info("Click 'Start Recording' and speak clearly")
     audio_value = st.audio_input("🎙️ Record your voice")
 
-if audio_value is not None:
-    try:
-        recognizer = sr.Recognizer()
+    if audio_value is not None:
+        try:
+            recognizer = sr.Recognizer()
 
-        with sr.AudioFile(audio_value) as source:
-            audio = recognizer.record(source)
+            with sr.AudioFile(audio_value) as source:
+                audio = recognizer.record(source)
 
-        with st.spinner("🔄 Transcribing..."):
-            text = recognizer.recognize_google(audio)
+            with st.spinner("🔄 Transcribing..."):
+                text = recognizer.recognize_google(audio)
 
-        st.success(f"✅ Transcribed: {text}")
-        st.session_state['voice_text'] = text
+            st.success(f"✅ Transcribed: {text}")
+            st.session_state['voice_text'] = text
 
-    except sr.UnknownValueError:
-        st.error("Could not understand audio. Please try again.")
+       except sr.UnknownValueError:
+           st.error("Could not understand audio. Please try again.")
 
-    except sr.RequestError:
-        st.error("Network error. Check your internet connection.")
-
-    except Exception as e:
-        st.error(f"Error: {e}")
+       except sr.RequestError:
+           st.error("Network error. Check your internet connection.")
+ 
+       except Exception as e:
+           st.error(f"Error: {e}")
     
     if 'voice_text' in st.session_state:
         text = st.session_state['voice_text']
