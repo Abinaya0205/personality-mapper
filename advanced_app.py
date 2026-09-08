@@ -281,7 +281,7 @@ elif feature == "🌐 Multilingual":
     if st.button("🌐 Translate & Analyze", type="primary"):
         if text:
             try:
-                translator = Translator()
+                translator = GoogleTranslator(source='auto', target=lang_map[output_lang])
                 
                 with st.spinner("Translating..."):
                     # Translate to English
