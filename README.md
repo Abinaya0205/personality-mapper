@@ -96,7 +96,7 @@ Visit the live Personality Mapper website:
 
 open browers
 
-http://localhost:8505
+https://personality-mapper-abinaya0203.streamlit.app/
 📚 Learning Concepts Covered
 Python Programming
 
