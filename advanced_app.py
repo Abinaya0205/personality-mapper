@@ -5,7 +5,7 @@ import pandas as pd
 import speech_recognition as sr
 from textblob import TextBlob
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 import nltk
 
 # Download NLTK data
