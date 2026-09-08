@@ -1,4 +1,4 @@
-# 🧠 Personality MappeR
+# 🧠 Personality Mapper
 
 ## 📌 Project Overview
 
@@ -87,8 +87,8 @@ personality-mapper/
 ## 🚀 Live Demo
 
 Visit the live Personality Mapper website:
+**https://personality-mapper-abinaya0203.streamlit.app/**
 
-**https://your-app-name.streamlit.app**
 
 ---
 
