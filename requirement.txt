@@ -1,0 +1,9 @@
+nltk
+textblob
+vaderSentiment
+spacy
+numpy
+streamlit
+pandas
+plotly
+matplotlib

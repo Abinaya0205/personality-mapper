@@ -1,0 +1,69 @@
+# ========== Python ==========
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ========== Streamlit ==========
+.streamlit/
+*.pid
+*.sqlite
+*.db
+
+# ========== VS Code ==========
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ========== Data Files ==========
+*.csv
+*.xlsx
+*.xls
+*.json
+*.db
+*.sqlite
+data/
+*.pkl
+*.pickle
+
+# ========== Logs ==========
+*.log
+*.tmp
+*.temp
+logs/
+
+# ========== Environment ==========
+.env
+.env.local
+.env.*.local
+*.env
+
+# ========== OS Files ==========
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ========== Notebooks ==========
+.ipynb_checkpoints/
+*.ipynb
+
+# ========== Other ==========
+*.mp4
+*.mp3
+*.wav
+*.pdf
+*.zip
+*.tar
+*.gz
