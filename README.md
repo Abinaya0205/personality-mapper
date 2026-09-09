@@ -1,4 +1,4 @@
-# 🧠 Personality Mapper
+# 🧠 Personality Mapper NLP 
 
 ## 📌 Project Overview
 
